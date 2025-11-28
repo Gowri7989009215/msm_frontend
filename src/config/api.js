@@ -1,6 +1,6 @@
 // API Configuration
 // Base URL comes from environment variable (Vite)
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = "https://msm-backend-shmo.onrender.com";
 
 // Export the base URL
 export const BASE_URL = API_BASE_URL;

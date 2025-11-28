@@ -4,7 +4,9 @@ import io from "socket.io-client";
 import "./Message.css";
 import { API_ENDPOINTS, SOCKET_URL } from "../config/api";
 
-const socket = io(SOCKET_URL);
+const socket = io(SOCKET_URL, {
+  transports: ["websocket"]
+});
 
 export default function Message() {
   const [conversations, setConversations] = useState([]);
